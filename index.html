@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf Application</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Bookshelf Application</h1>
+      <h1>Bookshelf Application</h1>
     </header>
     <main>
-        <div id="content">
-            <div class="card">
-                <div class="card-header">
-                    <h3>New Book</h3>
-                </div>
-                <div class="card-body">
-                    <form action="" id="addBook">
-                        <div class="form-input-group">
-                            <label for="bookTitle">Title *</label>
-                            <input type="text" id="bookTitle" placeholder="book title ..." required />
-                        </div>
-                        <div class="form-input-group">
-                            <label for="bookAuthor">Author *</label>
-                            <input type="text" id="bookAuthor" placeholder="book author ..." required />
-                        </div>
-                        <div class="form-input-group">
-                            <label for="releaseDate">Release Date *</label>
-                            <input type="number" id="year" required />
-                        </div>
-                        <div class="form-input-group mark-as-read">
-                            <input type="checkbox" name="read" id="read" />
-                            <label for="read">Mark as read</label>
-                        </div>
-                        <div class="form-input-group submit-form">
-                            <button type="submit">Add to Bookshelf</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      <div id="content">
+        <div class="card">
+          <div class="card-header">
+            <h3>New Book</h3>
+          </div>
+          <div class="card-body">
+            <form action="#" id="form">
+              <div class="form-input-group">
+                <label for="bookTitle">Title *</label>
+                <input
+                  type="text"
+                  id="bookTitle"
+                  placeholder="book title ..."
+                  required
+                />
+              </div>
+              <div class="form-input-group">
+                <label for="bookAuthor">Author *</label>
+                <input
+                  type="text"
+                  id="bookAuthor"
+                  placeholder="book author ..."
+                  required
+                />
+              </div>
+              <div class="form-input-group">
+                <label for="releaseDate">Release Date *</label>
+                <input
+                  type="number"
+                  id="releaseDate"
+                  placeholder="YYYY"
+                  required
+                />
+              </div>
+              <div class="form-input-group mark-as-read">
+                <input type="checkbox" name="read" id="read" />
+                <label for="read">Mark as read</label>
+              </div>
+              <div class="form-input-group submit-form">
+                <button type="submit" name="submit" value="submit">
+                  Add to Bookshelf
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <aside>
-            <div class="card">
-                <div class="card-header">
-                    <h3>Bookshelf</h3>
-                    <div class="search-container">
-                        <input type="search" name="search" id="searchBook" placeholder="What are you looking for? ..." />
-                        <button class="search-btn">
+      </div>
+      <aside>
+        <div class="card">
+          <div class="card-header">
+            <h3>Bookshelf</h3>
+            <div class="search-container">
+              <input
+                type="search"
+                name="search"
+                id="search-book-input"
+                placeholder="What are you looking for? ..."
+              />
+              <button class="search-btn" id="search-btn">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <h4>Unread</h4>
-                    <h4>Already read</h4>
-                </div>
             </div>
-        </aside>
+          </div>
+          <div class="card-body">
+            <h4>Unread</h4>
+            <div class="list-item" id="unread"></div>
+            <h4>Already read</h4>
+            <div class="list-item" id="already-read"></div>
+          </div>
+        </div>
+      </aside>
     </main>
 
     <footer>
-        <p>Copyright &copy; 2024 Rachmad Suharja All Right Reserved.</p>
-        <small>Made with &hearts; by Rachmad Suharja</small>
+      <p>Copyright &copy; 2024 Rachmad Suharja All Right Reserved.</p>
+      <small>Made with &hearts; by Rachmad Suharja</small>
     </footer>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
