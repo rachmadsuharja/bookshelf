@@ -2,6 +2,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
 *:focus {
   outline: none;
 }
@@ -106,7 +107,6 @@ main {
 
 #content {
   flex: 5;
-  displa: flex;
   flex-flow: column-nowrap;
 }
 
@@ -136,9 +136,11 @@ aside {
 aside .search-container {
   display: flex;
 }
+
 .search-container input {
   border-radius: 8px 0px 0px 8px;
 }
+
 .search-container button {
   border-radius: 0px 8px 8px 0px;
 }
@@ -196,7 +198,6 @@ footer {
   h1 {
     font-size: 1.5rem;
   }
-
   main {
     flex-direction: column;
   }
