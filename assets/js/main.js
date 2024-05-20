@@ -147,12 +147,23 @@ function bookShelf(bookObjects) {
     actionBtnContainer.append(cancelBtn);
   }
   const deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("delete-btn");
   const deleteIcon = document.createElement("i");
   deleteIcon.classList.add("fa-solid");
   deleteIcon.classList.add("fa-trash-can");
   deleteBtn.append(deleteIcon);
   deleteBtn.addEventListener("click", () => {
-    deleteBook(id);
+    const alertBox = document.getElementById("delete-alert-box");
+    alertBox.style.display = "flex";
+    const cancelDeleteBtn = document.getElementById("cancel-btn");
+    const continueDeleteBtn = document.getElementById("continue-btn");
+    cancelDeleteBtn.addEventListener("click", () => {
+      alertBox.style.display = "none";
+    });
+    continueDeleteBtn.addEventListener("click", () => {
+      deleteBook(id);
+      alertBox.style.display = "none";
+    });
   });
   actionBtnContainer.append(deleteBtn);
 
