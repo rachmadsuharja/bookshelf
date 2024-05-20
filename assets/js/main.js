@@ -68,7 +68,7 @@ function addBooks() {
 
   const title = titleInput.value;
   const author = authorInput.value;
-  const year = yearInput.value;
+  const year = parseInt(yearInput.value);
   const isComplete = isCompleteInput.checked;
 
   const bookObjects = generateBookObjects(
