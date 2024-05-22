@@ -14,6 +14,10 @@
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #b0a695;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -154,7 +158,7 @@ aside {
 aside #bookshelf {
   max-height: 45vh;
   margin: 1rem 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 aside .search-container {

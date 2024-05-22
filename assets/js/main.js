@@ -79,10 +79,10 @@ function addBooks() {
     isComplete
   );
   books.push(bookObjects);
-  // titleInput.value = "";
-  // authorInput.value = "";
-  // yearInput.value = "";
-  // isCompleteInput.checked = false;
+  titleInput.value = "";
+  authorInput.value = "";
+  yearInput.value = "";
+  isCompleteInput.checked = false;
   document.dispatchEvent(new Event(RENDER_EVENT));
   save();
 }
