@@ -29,6 +29,11 @@
   -o-border-radius: 1rem;
 }
 
+::selection {
+  background-color: #776b5d;
+  color: #f3eeea;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: #f3eeea;
@@ -156,9 +161,21 @@ aside {
 }
 
 aside #bookshelf {
-  max-height: 45vh;
+  max-height: 44vh;
   margin: 1rem 0;
   overflow-y: auto;
+}
+
+aside .text-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-header button {
+  background: transparent;
+  color: #776b5d;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 
 aside .search-container {
@@ -199,6 +216,18 @@ aside .book-list-container button {
   color: #776b5d;
   padding: 0.5rem;
   font-size: 1.2rem;
+}
+
+aside .card-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-footer button {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: normal;
 }
 
 footer {
