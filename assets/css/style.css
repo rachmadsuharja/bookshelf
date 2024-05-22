@@ -7,6 +7,24 @@
   outline: none;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #b0a695;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #776b5d;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: #f3eeea;
@@ -131,6 +149,12 @@ input {
 
 aside {
   flex: 3;
+}
+
+aside #bookshelf {
+  max-height: 45vh;
+  margin: 1rem 0;
+  overflow-y: scroll;
 }
 
 aside .search-container {
